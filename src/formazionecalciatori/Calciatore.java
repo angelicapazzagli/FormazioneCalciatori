@@ -55,6 +55,7 @@ public class Calciatore {
     
     public void eseguiAllenamento(Allenamento allenamentoScelto, Allenatore allenatoreScelto) {
         int miglioramento = allenamentoScelto.decidiBonus(allenatoreScelto);
+        miglioramento += allenamentoScelto.condizioni();
         if(null != allenamentoScelto.getFocus()) switch (allenamentoScelto.getFocus()) {
             case PAC:
                 velocità += miglioramento;
