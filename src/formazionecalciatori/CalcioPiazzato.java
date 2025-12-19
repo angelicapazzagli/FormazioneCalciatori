@@ -17,14 +17,36 @@ public class CalcioPiazzato extends Allenamento {
         this.distanza = distanza;
     }
     
+    public int probGoal() {
+        int base = 50;
+        if (distanza > 20) {
+            base -= 20;
+        }
+        if (!piedeForte) {
+            base -= 15;
+        }
+        else {
+            base += 15;
+        }
+        return base;
+    }
+    
     @Override 
     public int condizioni() {
-        if(distanza > 11 && piedeForte == false) {
-            return 7;
+        int bonus;
+        if (distanza > 11 && !piedeForte) {
+            bonus = 7;
+        } 
+        else if (distanza > 11) {
+            bonus = 5;
+        } 
+        else {
+            bonus = 3;
         }
-        else if(distanza > 11 && piedeForte == true) {
-            return 5;
+        int chance = probGoal();
+        if (chance < 50) {
+            bonus -= 2;
         }
-        return 3;
+        return bonus;
     }
 }

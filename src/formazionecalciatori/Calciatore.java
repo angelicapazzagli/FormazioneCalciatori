@@ -56,6 +56,8 @@ public class Calciatore {
     public void eseguiAllenamento(Allenamento allenamentoScelto, Allenatore allenatoreScelto) {
         int miglioramento = allenamentoScelto.decidiBonus(allenatoreScelto);
         miglioramento += allenamentoScelto.condizioni();
+        int bonusValore = getValore() / 500;
+        miglioramento += bonusValore;
         if(null != allenamentoScelto.getFocus()) switch (allenamentoScelto.getFocus()) {
             case PAC:
                 velocità += miglioramento;
@@ -133,6 +135,17 @@ public class Calciatore {
                 difesa = livellaValori(difesa);
                 break;
         }
+    }
+    
+    public int getValore() {
+        int ov = Integer.parseInt(getOverall());
+        if(ov >= 80) {
+            return ov * 100000;
+        }
+        if(ov >= 65) {
+            return ov * 10000;
+        }
+        return ov * 1000;
     }
     
     @Override

@@ -16,8 +16,21 @@ public class Triangolazione extends Allenamento {
         this.qualitàPassaggi = qualitàPassaggi;
     }
     
+    public int livelloIntesa() {
+        if (qualitàPassaggi >= 15) {
+            return 5;
+        } 
+        else if (qualitàPassaggi >= 10) {
+            return 3;
+        } 
+        else if (qualitàPassaggi >= 5) {
+            return 1;
+        }
+        return 0;
+    }
+    
     @Override
     public int condizioni() {
-        return qualitàPassaggi;
+        return qualitàPassaggi + livelloIntesa();
     }
 }

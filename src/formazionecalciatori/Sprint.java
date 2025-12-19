@@ -15,11 +15,18 @@ public class Sprint extends Allenamento{
         this.lunghezzaPercorso = lunghezza;
     }
     
+    public int affaticamento() {
+        if (lunghezzaPercorso >= 30) {
+            return 4;
+        } 
+        else if (lunghezzaPercorso >= 20) {
+            return 2;
+        }
+        return 1;
+    }
+    
     @Override
     public int condizioni() {
-        if(lunghezzaPercorso > 20) {
-            return 3;
-        }
-        return 0;
+        return affaticamento();
     }
 }
