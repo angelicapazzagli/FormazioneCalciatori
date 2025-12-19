@@ -9,7 +9,15 @@ package formazionecalciatori;
  * @author 39333
  */
 public class Triangolazione extends Allenamento {
-    public Triangolazione() {
-        super(Abilità.SHO);
+    private int qualitàPassaggi;
+    
+    public Triangolazione(int qualitàPassaggi) {
+        super(Abilità.PAS, "TRIANGOLAZIONE");
+        this.qualitàPassaggi = qualitàPassaggi;
+    }
+    
+    @Override
+    public int condizioni() {
+        return qualitàPassaggi;
     }
 }

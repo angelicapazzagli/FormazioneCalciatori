@@ -9,10 +9,12 @@ package formazionecalciatori;
  * @author 39333
  */
 public class Allenamento {
+    private String nome;
     private Abilità focus;
 
-    public Allenamento(Abilità focus) {
+    public Allenamento(Abilità focus, String nome) {
         this.focus = focus;
+        this.nome = nome;
     }
     
     public Abilità getFocus() {
@@ -31,5 +33,10 @@ public class Allenamento {
     public int condizioni() {
         int differenza = 1;
         return differenza;
+    }
+    
+    @Override
+    public String toString() {
+        return nome + " [" + focus + "]";
     }
 }

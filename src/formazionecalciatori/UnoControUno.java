@@ -12,7 +12,7 @@ public class UnoControUno extends Allenamento {
     private int agilitàAvversario;
     
     public UnoControUno(int agilità) {
-        super(Abilità.SHO);
+        super(Abilità.DEF, "UNO CONTRO UNO");
         this.agilitàAvversario = agilità;
     }
     

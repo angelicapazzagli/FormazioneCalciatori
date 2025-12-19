@@ -13,7 +13,7 @@ public class CalcioPiazzato extends Allenamento {
     private boolean piedeForte;
     
     public CalcioPiazzato(int distanza, boolean piedeForte) {
-        super(Abilità.SHO);
+        super(Abilità.SHO, "CALCIO PIAZZATO");
         this.distanza = distanza;
     }
     

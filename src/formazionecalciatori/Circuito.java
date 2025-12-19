@@ -12,7 +12,7 @@ public class Circuito extends Allenamento {
     private int pesi, nRipetizioni;
     
     public Circuito(int pesi, int ripetizioni) {
-        super(Abilità.SHO);
+        super(Abilità.PHY, "CIRCUITO");
         this.pesi = pesi;
         this.nRipetizioni = ripetizioni;
     }

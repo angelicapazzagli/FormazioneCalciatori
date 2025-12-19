@@ -11,7 +11,7 @@ package formazionecalciatori;
 public class Sprint extends Allenamento{
     private int lunghezzaPercorso;
     public Sprint(int lunghezza) {
-        super(Abilità.PAC);
+        super(Abilità.PAC, "SPRINT");
         this.lunghezzaPercorso = lunghezza;
     }
     

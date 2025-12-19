@@ -40,10 +40,10 @@ public class FormCalciatore extends javax.swing.JFrame {
     // <editor-fold defaultstate="collapsed" desc="Generated Code">//GEN-BEGIN:initComponents
     private void initComponents() {
 
-        jPanel1 = new javax.swing.JPanel();
+        pnlContenitore = new javax.swing.JPanel();
         lblTitolo = new javax.swing.JLabel();
         lblImmagine = new javax.swing.JLabel();
-        jPanel2 = new javax.swing.JPanel();
+        pnlAllenamento = new javax.swing.JPanel();
         btnSvolgiAllenamento = new javax.swing.JButton();
         lblAllenamento1 = new javax.swing.JLabel();
         lblAllenatore1 = new javax.swing.JLabel();
@@ -65,7 +65,7 @@ public class FormCalciatore extends javax.swing.JFrame {
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
 
-        jPanel1.setBackground(new java.awt.Color(0, 204, 51));
+        pnlContenitore.setBackground(new java.awt.Color(0, 204, 51));
 
         lblTitolo.setFont(new java.awt.Font("Serif", 3, 48)); // NOI18N
         lblTitolo.setForeground(new java.awt.Color(255, 255, 255));
@@ -77,8 +77,8 @@ public class FormCalciatore extends javax.swing.JFrame {
         lblImmagine.setMinimumSize(new java.awt.Dimension(1093, 1340));
         lblImmagine.setName(""); // NOI18N
 
-        jPanel2.setBackground(new java.awt.Color(0, 153, 51));
-        jPanel2.setBorder(javax.swing.BorderFactory.createEtchedBorder());
+        pnlAllenamento.setBackground(new java.awt.Color(0, 153, 51));
+        pnlAllenamento.setBorder(javax.swing.BorderFactory.createEtchedBorder());
 
         btnSvolgiAllenamento.setFont(new java.awt.Font("Serif", 3, 14)); // NOI18N
         btnSvolgiAllenamento.setText("SVOLGI ALLENAMENTO");
@@ -88,11 +88,17 @@ public class FormCalciatore extends javax.swing.JFrame {
             }
         });
 
-        lblAllenamento1.setFont(new java.awt.Font("Serif", 3, 14)); // NOI18N
+        lblAllenamento1.setFont(new java.awt.Font("Serif", 3, 18)); // NOI18N
         lblAllenamento1.setForeground(new java.awt.Color(255, 255, 255));
+        lblAllenamento1.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
 
-        lblAllenamento2.setFont(new java.awt.Font("Serif", 3, 14)); // NOI18N
+        lblAllenatore1.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
+
+        lblAllenamento2.setFont(new java.awt.Font("Serif", 3, 18)); // NOI18N
         lblAllenamento2.setForeground(new java.awt.Color(255, 255, 255));
+        lblAllenamento2.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
+
+        lblAllenatore2.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
 
         btnReset.setFont(new java.awt.Font("Serif", 3, 12)); // NOI18N
         btnReset.setText("RESET");
@@ -102,49 +108,57 @@ public class FormCalciatore extends javax.swing.JFrame {
             }
         });
 
-        javax.swing.GroupLayout jPanel2Layout = new javax.swing.GroupLayout(jPanel2);
-        jPanel2.setLayout(jPanel2Layout);
-        jPanel2Layout.setHorizontalGroup(
-            jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(jPanel2Layout.createSequentialGroup()
-                .addGroup(jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addGroup(jPanel2Layout.createSequentialGroup()
+        javax.swing.GroupLayout pnlAllenamentoLayout = new javax.swing.GroupLayout(pnlAllenamento);
+        pnlAllenamento.setLayout(pnlAllenamentoLayout);
+        pnlAllenamentoLayout.setHorizontalGroup(
+            pnlAllenamentoLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(pnlAllenamentoLayout.createSequentialGroup()
+                .addGroup(pnlAllenamentoLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addGroup(pnlAllenamentoLayout.createSequentialGroup()
                         .addContainerGap()
                         .addComponent(btnSvolgiAllenamento, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
-                    .addGroup(jPanel2Layout.createSequentialGroup()
-                        .addContainerGap()
-                        .addComponent(btnReset)
-                        .addGap(0, 0, Short.MAX_VALUE)))
+                    .addGroup(pnlAllenamentoLayout.createSequentialGroup()
+                        .addGroup(pnlAllenamentoLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                            .addGroup(pnlAllenamentoLayout.createSequentialGroup()
+                                .addContainerGap()
+                                .addComponent(btnReset))
+                            .addGroup(pnlAllenamentoLayout.createSequentialGroup()
+                                .addGap(18, 18, 18)
+                                .addComponent(lblAllenamento1, javax.swing.GroupLayout.PREFERRED_SIZE, 262, javax.swing.GroupLayout.PREFERRED_SIZE))
+                            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, pnlAllenamentoLayout.createSequentialGroup()
+                                .addContainerGap()
+                                .addComponent(lblAllenamento2, javax.swing.GroupLayout.PREFERRED_SIZE, 262, javax.swing.GroupLayout.PREFERRED_SIZE)))
+                        .addGap(0, 19, Short.MAX_VALUE)))
                 .addContainerGap())
-            .addGroup(jPanel2Layout.createSequentialGroup()
-                .addGap(43, 43, 43)
-                .addGroup(jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
-                    .addComponent(lblAllenatore1, javax.swing.GroupLayout.DEFAULT_SIZE, 225, Short.MAX_VALUE)
-                    .addComponent(lblAllenamento2, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                    .addComponent(lblAllenatore2, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                    .addComponent(lblAllenamento1, javax.swing.GroupLayout.PREFERRED_SIZE, 217, javax.swing.GroupLayout.PREFERRED_SIZE))
-                .addContainerGap(20, Short.MAX_VALUE))
+            .addGroup(pnlAllenamentoLayout.createSequentialGroup()
+                .addGap(83, 83, 83)
+                .addComponent(lblAllenatore1, javax.swing.GroupLayout.PREFERRED_SIZE, 139, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, pnlAllenamentoLayout.createSequentialGroup()
+                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                .addComponent(lblAllenatore2, javax.swing.GroupLayout.PREFERRED_SIZE, 139, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
         );
-        jPanel2Layout.setVerticalGroup(
-            jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel2Layout.createSequentialGroup()
+        pnlAllenamentoLayout.setVerticalGroup(
+            pnlAllenamentoLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, pnlAllenamentoLayout.createSequentialGroup()
                 .addContainerGap()
                 .addComponent(btnReset)
-                .addGap(20, 20, 20)
-                .addComponent(lblAllenatore1, javax.swing.GroupLayout.PREFERRED_SIZE, 57, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGap(30, 30, 30)
+                .addComponent(lblAllenatore1, javax.swing.GroupLayout.PREFERRED_SIZE, 109, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                 .addComponent(lblAllenamento1, javax.swing.GroupLayout.PREFERRED_SIZE, 49, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addGap(18, 18, 18)
-                .addComponent(lblAllenamento2, javax.swing.GroupLayout.PREFERRED_SIZE, 37, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                .addComponent(lblAllenatore2, javax.swing.GroupLayout.PREFERRED_SIZE, 42, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGap(42, 42, 42)
+                .addComponent(lblAllenamento2, javax.swing.GroupLayout.PREFERRED_SIZE, 49, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
+                .addComponent(lblAllenatore2, javax.swing.GroupLayout.PREFERRED_SIZE, 107, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                 .addComponent(btnSvolgiAllenamento, javax.swing.GroupLayout.PREFERRED_SIZE, 34, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addContainerGap())
         );
 
         cmbAllenamento.setFont(new java.awt.Font("Serif", 0, 12)); // NOI18N
-        cmbAllenamento.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "...", "SPRINT [pac]", "CALCI PIAZZATI [sho]", "TRIANGOLAZIONI [pas]", " SLALOM [dri]", "UNO CONTRO UNO [def]", "CIRCUITI [phy]" }));
+        cmbAllenamento.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "...", "SPRINT [pac]", "CALCI PIAZZATI [sho]", "TRIANGOLAZIONI [pas]", "SLALOM [dri]", "UNO CONTRO UNO [def]", "CIRCUITI [phy]" }));
 
         cmbAllenatore.setFont(new java.awt.Font("Serif", 0, 12)); // NOI18N
         cmbAllenatore.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "...", "PREPARATORE ATLETICO [pac]", "PREPARATORE PIAZZATI [sho]", "PREPARATORE TECNICO [pas]", "PREPARATORE INDIVIDUALE [dri]", "PREPARATORE TATTICO [def]", "PREPARATORE FISICO [phy]" }));
@@ -219,96 +233,89 @@ public class FormCalciatore extends javax.swing.JFrame {
             }
         });
 
-        javax.swing.GroupLayout jPanel1Layout = new javax.swing.GroupLayout(jPanel1);
-        jPanel1.setLayout(jPanel1Layout);
-        jPanel1Layout.setHorizontalGroup(
-            jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel1Layout.createSequentialGroup()
-                .addComponent(jPanel2, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addGroup(jPanel1Layout.createSequentialGroup()
-                        .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                            .addGroup(jPanel1Layout.createSequentialGroup()
-                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                                .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                                    .addComponent(lblOverall, javax.swing.GroupLayout.PREFERRED_SIZE, 91, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                    .addComponent(lblTextOV, javax.swing.GroupLayout.PREFERRED_SIZE, 91, javax.swing.GroupLayout.PREFERRED_SIZE))
-                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                                .addComponent(lblImmagine, javax.swing.GroupLayout.PREFERRED_SIZE, 250, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
-                            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel1Layout.createSequentialGroup()
-                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                                .addComponent(lblAbilità, javax.swing.GroupLayout.PREFERRED_SIZE, 158, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                .addGap(47, 47, 47)))
-                        .addGap(45, 45, 45))
-                    .addGroup(jPanel1Layout.createSequentialGroup()
-                        .addGap(50, 50, 50)
-                        .addComponent(lblNome)))
-                .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                        .addGroup(jPanel1Layout.createSequentialGroup()
-                            .addComponent(btnLeggenda, javax.swing.GroupLayout.PREFERRED_SIZE, 114, javax.swing.GroupLayout.PREFERRED_SIZE)
-                            .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                            .addComponent(btnInfortunio))
-                        .addComponent(cmbAllenamento, javax.swing.GroupLayout.PREFERRED_SIZE, 241, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
-                            .addComponent(btnSelezionaAllenatore, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                            .addComponent(cmbAllenatore, 0, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                            .addComponent(btnSelezionaAllenamento, javax.swing.GroupLayout.PREFERRED_SIZE, 241, javax.swing.GroupLayout.PREFERRED_SIZE)))
-                    .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel1Layout.createSequentialGroup()
-                        .addComponent(btnRiabilita)
-                        .addGap(10, 10, 10)))
-                .addGap(110, 110, 110))
-            .addGroup(jPanel1Layout.createSequentialGroup()
+        javax.swing.GroupLayout pnlContenitoreLayout = new javax.swing.GroupLayout(pnlContenitore);
+        pnlContenitore.setLayout(pnlContenitoreLayout);
+        pnlContenitoreLayout.setHorizontalGroup(
+            pnlContenitoreLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(pnlContenitoreLayout.createSequentialGroup()
                 .addGap(18, 18, 18)
                 .addComponent(btnRegole, javax.swing.GroupLayout.PREFERRED_SIZE, 63, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                 .addComponent(lblTitolo, javax.swing.GroupLayout.PREFERRED_SIZE, 792, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+            .addGroup(pnlContenitoreLayout.createSequentialGroup()
+                .addComponent(pnlAllenamento, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 9, Short.MAX_VALUE)
+                .addGroup(pnlContenitoreLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, pnlContenitoreLayout.createSequentialGroup()
+                        .addGroup(pnlContenitoreLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                            .addComponent(lblOverall, javax.swing.GroupLayout.PREFERRED_SIZE, 91, javax.swing.GroupLayout.PREFERRED_SIZE)
+                            .addComponent(lblTextOV, javax.swing.GroupLayout.PREFERRED_SIZE, 91, javax.swing.GroupLayout.PREFERRED_SIZE))
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                        .addComponent(lblImmagine, javax.swing.GroupLayout.PREFERRED_SIZE, 250, javax.swing.GroupLayout.PREFERRED_SIZE))
+                    .addComponent(lblNome, javax.swing.GroupLayout.Alignment.TRAILING)
+                    .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, pnlContenitoreLayout.createSequentialGroup()
+                        .addComponent(lblAbilità, javax.swing.GroupLayout.PREFERRED_SIZE, 186, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addGap(50, 50, 50)))
+                .addGap(31, 31, 31)
+                .addGroup(pnlContenitoreLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, pnlContenitoreLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                        .addGroup(pnlContenitoreLayout.createSequentialGroup()
+                            .addComponent(btnLeggenda, javax.swing.GroupLayout.PREFERRED_SIZE, 114, javax.swing.GroupLayout.PREFERRED_SIZE)
+                            .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                            .addComponent(btnInfortunio))
+                        .addComponent(cmbAllenamento, javax.swing.GroupLayout.PREFERRED_SIZE, 241, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addGroup(pnlContenitoreLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
+                            .addComponent(btnSelezionaAllenatore, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                            .addComponent(cmbAllenatore, 0, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                            .addComponent(btnSelezionaAllenamento, javax.swing.GroupLayout.PREFERRED_SIZE, 241, javax.swing.GroupLayout.PREFERRED_SIZE)))
+                    .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, pnlContenitoreLayout.createSequentialGroup()
+                        .addComponent(btnRiabilita)
+                        .addGap(10, 10, 10)))
+                .addContainerGap(9, Short.MAX_VALUE))
         );
-        jPanel1Layout.setVerticalGroup(
-            jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(jPanel1Layout.createSequentialGroup()
-                .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addGroup(jPanel1Layout.createSequentialGroup()
+        pnlContenitoreLayout.setVerticalGroup(
+            pnlContenitoreLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(pnlContenitoreLayout.createSequentialGroup()
+                .addGroup(pnlContenitoreLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addGroup(pnlContenitoreLayout.createSequentialGroup()
                         .addGap(39, 39, 39)
                         .addComponent(lblTitolo)
                         .addGap(35, 35, 35))
-                    .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel1Layout.createSequentialGroup()
+                    .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, pnlContenitoreLayout.createSequentialGroup()
                         .addContainerGap()
                         .addComponent(btnRegole, javax.swing.GroupLayout.PREFERRED_SIZE, 36, javax.swing.GroupLayout.PREFERRED_SIZE)
                         .addGap(48, 48, 48)))
-                .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addGroup(jPanel1Layout.createSequentialGroup()
-                        .addComponent(lblOverall, javax.swing.GroupLayout.PREFERRED_SIZE, 84, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGroup(pnlContenitoreLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addGroup(pnlContenitoreLayout.createSequentialGroup()
+                        .addGap(14, 14, 14)
+                        .addComponent(lblOverall)
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                        .addComponent(lblTextOV, javax.swing.GroupLayout.PREFERRED_SIZE, 68, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addComponent(lblTextOV)
                         .addGap(0, 0, Short.MAX_VALUE))
-                    .addComponent(jPanel2, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                    .addGroup(jPanel1Layout.createSequentialGroup()
-                        .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
-                            .addGroup(jPanel1Layout.createSequentialGroup()
+                    .addComponent(pnlAllenamento, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                    .addGroup(pnlContenitoreLayout.createSequentialGroup()
+                        .addGroup(pnlContenitoreLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
+                            .addGroup(pnlContenitoreLayout.createSequentialGroup()
                                 .addComponent(cmbAllenamento, javax.swing.GroupLayout.PREFERRED_SIZE, 32, javax.swing.GroupLayout.PREFERRED_SIZE)
                                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                                 .addComponent(btnSelezionaAllenamento)
                                 .addGap(44, 44, 44)
                                 .addComponent(cmbAllenatore, javax.swing.GroupLayout.PREFERRED_SIZE, 35, javax.swing.GroupLayout.PREFERRED_SIZE)
                                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                                .addComponent(btnSelezionaAllenatore))
-                            .addComponent(lblImmagine, javax.swing.GroupLayout.PREFERRED_SIZE, 326, javax.swing.GroupLayout.PREFERRED_SIZE))
-                        .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                            .addGroup(jPanel1Layout.createSequentialGroup()
-                                .addGap(20, 20, 20)
-                                .addComponent(lblNome, javax.swing.GroupLayout.PREFERRED_SIZE, 33, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                                .addComponent(lblAbilità, javax.swing.GroupLayout.PREFERRED_SIZE, 107, javax.swing.GroupLayout.PREFERRED_SIZE))
-                            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel1Layout.createSequentialGroup()
+                                .addComponent(btnSelezionaAllenatore)
                                 .addGap(95, 95, 95)
                                 .addComponent(btnRiabilita)
                                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                                .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                                .addGroup(pnlContenitoreLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                                     .addComponent(btnInfortunio, javax.swing.GroupLayout.PREFERRED_SIZE, 39, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                    .addComponent(btnLeggenda, javax.swing.GroupLayout.PREFERRED_SIZE, 39, javax.swing.GroupLayout.PREFERRED_SIZE))))
+                                    .addComponent(btnLeggenda, javax.swing.GroupLayout.PREFERRED_SIZE, 39, javax.swing.GroupLayout.PREFERRED_SIZE)))
+                            .addGroup(pnlContenitoreLayout.createSequentialGroup()
+                                .addComponent(lblImmagine, javax.swing.GroupLayout.PREFERRED_SIZE, 326, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                .addGap(20, 20, 20)
+                                .addComponent(lblNome, javax.swing.GroupLayout.PREFERRED_SIZE, 33, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                                .addComponent(lblAbilità, javax.swing.GroupLayout.PREFERRED_SIZE, 107, javax.swing.GroupLayout.PREFERRED_SIZE)))
                         .addContainerGap(12, Short.MAX_VALUE))))
         );
 
@@ -316,13 +323,11 @@ public class FormCalciatore extends javax.swing.JFrame {
         getContentPane().setLayout(layout);
         layout.setHorizontalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, layout.createSequentialGroup()
-                .addGap(0, 6, Short.MAX_VALUE)
-                .addComponent(jPanel1, javax.swing.GroupLayout.PREFERRED_SIZE, 955, javax.swing.GroupLayout.PREFERRED_SIZE))
+            .addComponent(pnlContenitore, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
         );
         layout.setVerticalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addComponent(jPanel1, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+            .addComponent(pnlContenitore, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
         );
 
         pack();
@@ -418,25 +423,25 @@ public class FormCalciatore extends javax.swing.JFrame {
                 break;
             case "PREPARATORE TECNICO [pas]":
                 a = new Allenatore(Abilità.PAS, "ANCELOTTI");
-                path = "/immagini/Ancelotti.png";
+                path = "/immagini/Ancelotti.jpeg";
                 break;
             case "PREPARATORE INDIVIDUALE [dri]":
                 a = new Allenatore(Abilità.DRI, "GUARDIOLA");
-                path = "/immagini/Guardiola.png";
+                path = "/immagini/Guardiola.jpeg";
                 break;
             case "PREPARATORE TATTICO [def]":
                 a = new Allenatore(Abilità.DEF, "SPALLETTI");
-                path = "/immagini/Spalletti.png";
+                path = "/immagini/Spalletti.jpeg";
                 break;
             case "PREPARATORE FISICO [phy]":
                 a = new Allenatore(Abilità.PHY, "CONTE");
-                path = "/immagini/Conte.png";
+                path = "/immagini/Conte.jpeg";
                 break;
             default:
                 return;
         }
         ImageIcon icon = new ImageIcon(getClass().getResource(path));
-        Image img = icon.getImage().getScaledInstance(64, 64, Image.SCALE_SMOOTH);
+        Image img = icon.getImage().getScaledInstance(90, 90, Image.SCALE_SMOOTH);
         a.setIcon(new ImageIcon(img));
         if(squadra.addAllenatore(a)) {
             aggiornaLabelAllenatori();
@@ -460,10 +465,10 @@ public class FormCalciatore extends javax.swing.JFrame {
                 al = new CalcioPiazzato(20, true);
                 break;
             case "TRIANGOLAZIONI [pas]":
-                al = new Triangolazione();
+                al = new Triangolazione(8);
                 break;
             case "SLALOM [dri]":
-                al = new Slalom();
+                al = new Slalom(10, 4);
                 break;
             case "UNO CONTRO UNO [def]":
                 al = new UnoControUno(77);
@@ -550,8 +555,6 @@ public class FormCalciatore extends javax.swing.JFrame {
     private javax.swing.JButton btnSvolgiAllenamento;
     private javax.swing.JComboBox<String> cmbAllenamento;
     private javax.swing.JComboBox<String> cmbAllenatore;
-    private javax.swing.JPanel jPanel1;
-    private javax.swing.JPanel jPanel2;
     private javax.swing.JLabel lblAbilità;
     private javax.swing.JLabel lblAllenamento1;
     private javax.swing.JLabel lblAllenamento2;
@@ -562,5 +565,7 @@ public class FormCalciatore extends javax.swing.JFrame {
     private javax.swing.JLabel lblOverall;
     private javax.swing.JLabel lblTextOV;
     private javax.swing.JLabel lblTitolo;
+    private javax.swing.JPanel pnlAllenamento;
+    private javax.swing.JPanel pnlContenitore;
     // End of variables declaration//GEN-END:variables
 }

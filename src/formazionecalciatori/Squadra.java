@@ -47,17 +47,19 @@ public class Squadra {
     
     public boolean addAllenatore(Allenatore a) {
         if (allenatori.size() < 2) {
-            allenatori.add(a);
+            aggiungiAllenatore(a);
             return true;
         }
+        allenatori = new ArrayList<>();
         return false;
     }
 
     public boolean addAllenamento(Allenamento a) {
         if (allenamenti.size() < 2) {
-            allenamenti.add(a);
+            aggiungiAllenamento(a);
             return true;
         }
+        allenamenti = new ArrayList<>();
         return false;
     }
 
