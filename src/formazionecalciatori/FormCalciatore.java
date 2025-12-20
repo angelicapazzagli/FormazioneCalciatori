@@ -251,39 +251,44 @@ public class FormCalciatore extends javax.swing.JFrame {
                 .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
             .addGroup(pnlContenitoreLayout.createSequentialGroup()
                 .addComponent(pnlAllenamento, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 9, Short.MAX_VALUE)
-                .addGroup(pnlContenitoreLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, pnlContenitoreLayout.createSequentialGroup()
-                        .addGroup(pnlContenitoreLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                            .addComponent(lblOverall, javax.swing.GroupLayout.PREFERRED_SIZE, 91, javax.swing.GroupLayout.PREFERRED_SIZE)
-                            .addComponent(lblTextOV, javax.swing.GroupLayout.PREFERRED_SIZE, 91, javax.swing.GroupLayout.PREFERRED_SIZE))
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                        .addComponent(lblImmagine, javax.swing.GroupLayout.PREFERRED_SIZE, 250, javax.swing.GroupLayout.PREFERRED_SIZE))
-                    .addComponent(lblNome, javax.swing.GroupLayout.Alignment.TRAILING)
-                    .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, pnlContenitoreLayout.createSequentialGroup()
-                        .addComponent(lblAbilità, javax.swing.GroupLayout.PREFERRED_SIZE, 186, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addGap(50, 50, 50)))
                 .addGroup(pnlContenitoreLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addGroup(pnlContenitoreLayout.createSequentialGroup()
-                        .addGap(31, 31, 31)
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                         .addGroup(pnlContenitoreLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, pnlContenitoreLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                                .addGroup(pnlContenitoreLayout.createSequentialGroup()
-                                    .addComponent(btnLeggenda, javax.swing.GroupLayout.PREFERRED_SIZE, 114, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                    .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                                    .addComponent(btnInfortunio))
-                                .addComponent(cmbAllenamento, javax.swing.GroupLayout.PREFERRED_SIZE, 241, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                .addGroup(pnlContenitoreLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
-                                    .addComponent(btnSelezionaAllenatore, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                                    .addComponent(cmbAllenatore, 0, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                                    .addComponent(btnSelezionaAllenamento, javax.swing.GroupLayout.PREFERRED_SIZE, 241, javax.swing.GroupLayout.PREFERRED_SIZE)))
                             .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, pnlContenitoreLayout.createSequentialGroup()
-                                .addComponent(btnRiabilita)
-                                .addGap(10, 10, 10))))
+                                .addGroup(pnlContenitoreLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                                    .addComponent(lblOverall, javax.swing.GroupLayout.PREFERRED_SIZE, 91, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                    .addComponent(lblTextOV, javax.swing.GroupLayout.PREFERRED_SIZE, 91, javax.swing.GroupLayout.PREFERRED_SIZE))
+                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                                .addComponent(lblImmagine, javax.swing.GroupLayout.PREFERRED_SIZE, 250, javax.swing.GroupLayout.PREFERRED_SIZE))
+                            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, pnlContenitoreLayout.createSequentialGroup()
+                                .addComponent(lblAbilità, javax.swing.GroupLayout.PREFERRED_SIZE, 186, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                .addGap(19, 19, 19)))
+                        .addGroup(pnlContenitoreLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                            .addGroup(pnlContenitoreLayout.createSequentialGroup()
+                                .addGap(31, 31, 31)
+                                .addGroup(pnlContenitoreLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                                    .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, pnlContenitoreLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                                        .addGroup(pnlContenitoreLayout.createSequentialGroup()
+                                            .addComponent(btnLeggenda, javax.swing.GroupLayout.PREFERRED_SIZE, 114, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                            .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                                            .addComponent(btnInfortunio))
+                                        .addComponent(cmbAllenamento, javax.swing.GroupLayout.PREFERRED_SIZE, 241, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                        .addGroup(pnlContenitoreLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
+                                            .addComponent(btnSelezionaAllenatore, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                                            .addComponent(cmbAllenatore, 0, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                                            .addComponent(btnSelezionaAllenamento, javax.swing.GroupLayout.PREFERRED_SIZE, 241, javax.swing.GroupLayout.PREFERRED_SIZE)))
+                                    .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, pnlContenitoreLayout.createSequentialGroup()
+                                        .addComponent(btnRiabilita)
+                                        .addGap(10, 10, 10))))
+                            .addGroup(pnlContenitoreLayout.createSequentialGroup()
+                                .addGap(69, 69, 69)
+                                .addComponent(lblValore, javax.swing.GroupLayout.PREFERRED_SIZE, 161, javax.swing.GroupLayout.PREFERRED_SIZE)))
+                        .addContainerGap(12, Short.MAX_VALUE))
                     .addGroup(pnlContenitoreLayout.createSequentialGroup()
-                        .addGap(69, 69, 69)
-                        .addComponent(lblValore, javax.swing.GroupLayout.PREFERRED_SIZE, 161, javax.swing.GroupLayout.PREFERRED_SIZE)))
-                .addContainerGap(9, Short.MAX_VALUE))
+                        .addGap(53, 53, 53)
+                        .addComponent(lblNome)
+                        .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))))
         );
         pnlContenitoreLayout.setVerticalGroup(
             pnlContenitoreLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
@@ -298,33 +303,35 @@ public class FormCalciatore extends javax.swing.JFrame {
                         .addComponent(btnRegole, javax.swing.GroupLayout.PREFERRED_SIZE, 36, javax.swing.GroupLayout.PREFERRED_SIZE)
                         .addGap(48, 48, 48)))
                 .addGroup(pnlContenitoreLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addGroup(pnlContenitoreLayout.createSequentialGroup()
-                        .addGap(14, 14, 14)
-                        .addComponent(lblOverall)
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                        .addComponent(lblTextOV)
-                        .addGap(0, 0, Short.MAX_VALUE))
                     .addComponent(pnlAllenamento, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                     .addGroup(pnlContenitoreLayout.createSequentialGroup()
-                        .addGroup(pnlContenitoreLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING, false)
+                        .addGroup(pnlContenitoreLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                             .addGroup(pnlContenitoreLayout.createSequentialGroup()
-                                .addComponent(lblImmagine, javax.swing.GroupLayout.PREFERRED_SIZE, 326, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                .addGap(20, 20, 20)
-                                .addComponent(lblNome, javax.swing.GroupLayout.PREFERRED_SIZE, 33, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                .addGap(14, 14, 14)
+                                .addComponent(lblOverall)
                                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                                .addComponent(lblAbilità, javax.swing.GroupLayout.PREFERRED_SIZE, 107, javax.swing.GroupLayout.PREFERRED_SIZE))
+                                .addComponent(lblTextOV)
+                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
                             .addGroup(pnlContenitoreLayout.createSequentialGroup()
-                                .addGap(25, 25, 25)
-                                .addComponent(lblValore)
-                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                                .addComponent(cmbAllenamento, javax.swing.GroupLayout.PREFERRED_SIZE, 32, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                                .addComponent(btnSelezionaAllenamento)
-                                .addGap(44, 44, 44)
-                                .addComponent(cmbAllenatore, javax.swing.GroupLayout.PREFERRED_SIZE, 35, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                                .addComponent(btnSelezionaAllenatore)
-                                .addGap(95, 95, 95)
+                                .addGroup(pnlContenitoreLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                                    .addComponent(lblImmagine, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.PREFERRED_SIZE, 326, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                    .addGroup(pnlContenitoreLayout.createSequentialGroup()
+                                        .addGap(25, 25, 25)
+                                        .addComponent(lblValore)
+                                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                                        .addComponent(cmbAllenamento, javax.swing.GroupLayout.PREFERRED_SIZE, 32, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                                        .addComponent(btnSelezionaAllenamento)
+                                        .addGap(44, 44, 44)
+                                        .addComponent(cmbAllenatore, javax.swing.GroupLayout.PREFERRED_SIZE, 35, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
+                                        .addComponent(btnSelezionaAllenatore)))
+                                .addGap(20, 20, 20)))
+                        .addComponent(lblNome, javax.swing.GroupLayout.PREFERRED_SIZE, 33, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                        .addGroup(pnlContenitoreLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                            .addComponent(lblAbilità, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.PREFERRED_SIZE, 107, javax.swing.GroupLayout.PREFERRED_SIZE)
+                            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, pnlContenitoreLayout.createSequentialGroup()
                                 .addComponent(btnRiabilita)
                                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                                 .addGroup(pnlContenitoreLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
@@ -348,12 +355,12 @@ public class FormCalciatore extends javax.swing.JFrame {
     }// </editor-fold>//GEN-END:initComponents
 
     private void btnSvolgiAllenamentoActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnSvolgiAllenamentoActionPerformed
-        if (squadra.getAllenatori().size() == 0 || squadra.getAllenamenti().size() == 0) {
+        if(squadra.getAllenatori().size() == 0 || squadra.getAllenamenti().size() == 0) {
             return;
         }
-        for (int i = 0; i < squadra.getAllenatori().size(); i++) {
+        for(int i = 0; i < squadra.getAllenatori().size(); i++) {
             Allenatore a = squadra.getAllenatori().get(i);
-            for (int j = 0; j < squadra.getAllenamenti().size(); j++) {
+            for(int j = 0; j < squadra.getAllenamenti().size(); j++) {
                 Allenamento al = squadra.getAllenamenti().get(j);
                 squadra.eseguiAllenamento(al, a);
             }
@@ -365,14 +372,14 @@ public class FormCalciatore extends javax.swing.JFrame {
     }//GEN-LAST:event_btnSvolgiAllenamentoActionPerformed
 
     private void btnSelezionaAllenamentoActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnSelezionaAllenamentoActionPerformed
-        if (cmbAllenamento.getSelectedIndex() == 0) {
+        if(cmbAllenamento.getSelectedIndex() == 0) {
             return;
         }
         setAllenamento();
     }//GEN-LAST:event_btnSelezionaAllenamentoActionPerformed
 
     private void btnSelezionaAllenatoreActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnSelezionaAllenatoreActionPerformed
-        if (cmbAllenatore.getSelectedIndex() == 0) {
+        if(cmbAllenatore.getSelectedIndex() == 0) {
             return;
         }
         setAllenatore();      
@@ -390,7 +397,7 @@ public class FormCalciatore extends javax.swing.JFrame {
     }//GEN-LAST:event_btnResetActionPerformed
 
     private void btnLeggendaActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnLeggendaActionPerformed
-        if (calciatore.getValore() < 10000) {
+        if(calciatore.getValore() < 10000) {
             JOptionPane.showMessageDialog(this, 
                 "Valore giocatore insufficiente per richiedere aiuto da una Leggenda");
             return;
@@ -411,6 +418,7 @@ public class FormCalciatore extends javax.swing.JFrame {
         btnSvolgiAllenamento.setEnabled(true);
         btnLeggenda.setEnabled(true);
         btnRiabilita.setEnabled(false);
+        aggiornaStatistiche();
     }//GEN-LAST:event_btnRiabilitaActionPerformed
 
     private void btnRegoleActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnRegoleActionPerformed
@@ -503,13 +511,13 @@ public class FormCalciatore extends javax.swing.JFrame {
     }
     
     private void aggiornaLabelAllenatori() {
-        if (squadra.getAllenatori().size() > 0) {
+        if(squadra.getAllenatori().size() > 0) {
             lblAllenatore1.setIcon(squadra.getAllenatori().get(0).getIcon());
         }
         else {
             lblAllenatore1.setIcon(null);
         }
-        if (squadra.getAllenatori().size() > 1) {
+        if(squadra.getAllenatori().size() > 1) {
             lblAllenatore2.setIcon(squadra.getAllenatori().get(1).getIcon());
         }
         else {
@@ -518,13 +526,13 @@ public class FormCalciatore extends javax.swing.JFrame {
     }
     
     private void aggiornaLabelAllenamenti() {
-        if (squadra.getAllenamenti().size() > 0){
+        if(squadra.getAllenamenti().size() > 0){
             lblAllenamento1.setText(squadra.getAllenamenti().get(0).toString());
         }
         else {
             lblAllenamento1.setText("");
         }
-        if (squadra.getAllenamenti().size() > 1) {
+        if(squadra.getAllenamenti().size() > 1) {
             lblAllenamento2.setText(squadra.getAllenamenti().get(1).toString());
         }
         else {
@@ -536,6 +544,10 @@ public class FormCalciatore extends javax.swing.JFrame {
         lblAbilità.setText(calciatore.getAbilità());
         lblOverall.setText(calciatore.getOverall());
         aggiornaValore();
+        if(Integer.parseInt(calciatore.getOverall()) == 99) {
+            JOptionPane.showMessageDialog(this, 
+                "Complimenti! " + calciatore.getNome() + " ha ottenuto la sua forma migliore!");
+        }
     }
     
     private void aggiornaValore() {
